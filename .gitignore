@@ -1,0 +1,6 @@
+# cocosは今は外しておく
+cocos2d-x/
+
+# Unity
+Unity/2DTest/Library/
+Unity/2DTest/Temp/

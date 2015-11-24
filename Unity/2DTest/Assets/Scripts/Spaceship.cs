@@ -20,6 +20,9 @@ public abstract class Spaceship : MonoBehaviour
 	// 爆発のPrefab
 	public GameObject explosion;
 
+	// アニメーターコンポーネント
+	private Animator animator;
+
 	// 爆発の作成
 	public void Explosion()
 	{
@@ -30,6 +33,17 @@ public abstract class Spaceship : MonoBehaviour
 	public void Shot(Transform origin)
 	{
 		Instantiate(bullet, origin.position, origin.rotation);
+	}
+
+	// アニメーターコンポーネントの取得
+	public Animator GetAnimator()
+	{
+		if(animator == null)
+		{
+			animator = GetComponent<Animator>();
+		}
+
+		return animator;
 	}
 
 	protected abstract void Move(Vector2 direction);

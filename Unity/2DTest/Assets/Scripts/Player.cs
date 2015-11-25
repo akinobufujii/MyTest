@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnitySampleAssets.CrossPlatformInput;
 
 public class Player : Spaceship
 {
@@ -29,10 +30,10 @@ public class Player : Spaceship
 	void Update()
 	{
 		// 右左
-		float x = Input.GetAxisRaw("Horizontal");
+		float x = CrossPlatformInputManager.GetAxisRaw("Horizontal");
 
 		// 上下
-		float y = Input.GetAxisRaw("Vertical");
+		float y = CrossPlatformInputManager.GetAxisRaw("Vertical");
 
 		// 移動する向きを求める
 		Vector2 direction = new Vector2(x, y).normalized;

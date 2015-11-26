@@ -4,3 +4,8 @@ cocos2d-x/
 # Unity
 Unity/2DTest/Library/
 Unity/2DTest/Temp/
+
+# その他拡張子
+*.tlog
+*.idb
+*.sdf

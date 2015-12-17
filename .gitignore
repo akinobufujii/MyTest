@@ -6,3 +6,10 @@ Unity/2DTest/Temp/
 *.tlog
 *.idb
 *.sdf
+*.d
+*.o
+*.class
+*.resfiles
+*.intermediate
+*.gitkeep
+*.exp
